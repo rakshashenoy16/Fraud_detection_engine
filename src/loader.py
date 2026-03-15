@@ -1,6 +1,7 @@
 import pandas as pd
 
 
+#loads the dataset
 def load_merchants(path):
     return pd.read_csv(path)
 

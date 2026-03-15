@@ -1,6 +1,54 @@
+
 __pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
 *.pyc
-.env
-logs/*
-outputs/*
+*.pyc.*
+
+
+# Virtual Environments
+
+venv/
+env/
+ENV/
+.venv/
+
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# Logs
+logs/
+*.log
+
+# OS File
+.DS_Store
+Thumbs.db
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+
+
+# Testing
 .coverage
+htmlcov/
+.pytest_cache/
+
+
+# Build Files
+build/
+dist/
+*.egg-info/
+streamlit/
+
+
+# Output Files
+outputs/*.csv
+outputs/*.json
+outputs/*.log

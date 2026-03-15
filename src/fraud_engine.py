@@ -18,19 +18,19 @@ def detect_fraud(transactions, merchants):
 
         amount = tx["transaction_amount"]
 
-        # Rule 1
+        # Rule one
         if amount > 100000:
             reasons.append("HIGH_VALUE_TRANSACTION")
 
-        # Rule 2
+        # Rule two
         if tx["country"] != merchant["country"]:
             reasons.append("CROSS_BORDER_TRANSACTION")
 
-        # Rule 4
+        # Rule four
         if tx["payment_method"] == "CRYPTO" and amount > 50000:
             reasons.append("CRYPTO_HIGH_VALUE")
 
-        # Rule 3 Rapid transactions
+        # Rule three
         customer_id = tx["customer_id"]
         time = tx["transaction_time"]
 
